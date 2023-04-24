@@ -1,0 +1,4 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),a'L(R) #post,a'L(R) #pre,EB #post,EB #pre,#voxels
+579268807,FB1C(NO1/NO3)_R,LALNOmFB1,FB1C,Traced,3282,1356,3,,24,5,1823088730
+699031185,SIFa(PDM34),,SIFa,Traced,1080,777,2,1,19,5,5702733325
+5813061260,OA-VPM3(NO2/NO3)_L,,OA-VPM3,Traced,5122,4069,9,10,,1,3486100136

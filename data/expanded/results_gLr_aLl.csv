@@ -1,0 +1,4 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),gL(R) #post,gL(R) #pre,aL(L) #post,aL(L) #pre,#voxels
+331662710,PPL106(a3)_R,,PPL106,Traced,9962,1814,5,,2375,468,2855596370
+424767514,MBON11(y1pedc>a/B)_R,,MBON11,Traced,27642,1646,15468,213,27,8,5265462913
+517518166,MBON11(y1pedc>a/B)(ADM05)_L,,MBON11,Traced,1160,1378,73,84,131,51,1964048244

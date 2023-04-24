@@ -38,8 +38,13 @@ neuronSizes = cell(nResults, 1);
 for i = 1:nResults
     neuronSizes{i} = results{i}.inputs__post_ + results{i}.outputs__pre_;
 end
-maxSizes = cellfun(@max, neuronSizes);
-maxSize = max(maxSizes);
+maxSizes = cellfun(@max, neuronSizes, 'UniformOutput', false);
+if class(maxSizes) == "cell"
+    maxSizes(cellfun(@isempty, maxSizes)) = {NaN};
+    maxSize = max(cell2mat(maxSizes));
+else
+    maxSize = max(maxSizes);
+end
 
 % Compute connectivity score for each neuron/region, normalized by maxSize
 cScoreNeuron = cell(nResults, 1);
@@ -79,3 +84,11 @@ save(fullfile(resultsDir, "Connectivity_" + strjoin(uniqueRegion, '_') + '.mat')
 saveas(f1, fullfile(resultsDir, "ConnectivityMatrix_" + strjoin(uniqueRegion, '_') + ".png"))
 
 end
+
+% Error using  / 
+% Matrix dimensions must agree.
+% 
+% Error in getConnectivityMatrix (line 54)
+%         results{i}.inputs__post_ * results{i}{:,
+%         results{i}.Properties.VariableNames ==
+%         region(i, 3) + '_pre'}/ ...

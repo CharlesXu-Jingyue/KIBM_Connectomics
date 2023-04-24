@@ -1,0 +1,6 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),aL(R) #post,aL(R) #pre,EB #post,EB #pre,#voxels
+456846996,PAM11(a1)_R,,PAM11,Traced,529,165,193,96,,1,371345136
+699031185,SIFa(PDM34),,SIFa,Traced,1080,777,95,25,19,5,5702733325
+1418618235,SIFa(PDM34),,SIFa,Traced,1592,935,83,23,57,34,6190229391
+5812983309,KCab-c_R,,KCab-c,Traced,408,145,157,52,,1,228612790
+5813050818,KCab-m_R,,KCab-m,Traced,560,188,216,83,,2,180469456

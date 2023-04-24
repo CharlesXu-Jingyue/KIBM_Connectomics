@@ -1,0 +1,4 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),LAL(R) #post,LAL(R) #pre,a'L(L) #post,a'L(L) #pre,#voxels
+517514142,PPL104(a'3)_R,,PPL104,Traced,5012,1563,5,,82,36,1948744287
+642702809,CRE050_R,not yet identified MBON candidates,CRE050,Traced,4620,620,3,,14,1,2023774583
+5813061512,MBON06(B1>a)_R,,MBON06,Traced,12107,496,11,,16,12,2038784377
