@@ -1,0 +1,4 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),BU(L) #post,BU(L) #pre,bL(R) #post,bL(R) #pre,#voxels
+1136865339,ExR2(PPM3-EB-DAN/ring)_L,,ExR2,Traced,1873,1129,46,81,,1,1198248632
+1167300055,ER4d(ring)_L,,ER4d,Traced,2037,613,1,1,,1,795222199
+1230026228,ER4d(ring)_L,,ER4d,Traced,1953,590,4,1,,1,777031418

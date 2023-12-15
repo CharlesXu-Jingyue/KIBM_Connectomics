@@ -31,9 +31,13 @@ end
 
 % Split the strings by the delimiter
 region = split(dataName, delim);
+regCol = region(:,2:3);
+regCol = strrep(regCol, 'p', '_');
+regCol = strrep(regCol, 'l', '_L_');
+regCol = strrep(regCol, 'r', '_R_');
 uniqueRegion = unique(region(:,2));
 
-% Calculate maximum "neuron size" of all results
+%% Calculate maximum "neuron size" of all results
 neuronSizes = cell(nResults, 1);
 for i = 1:nResults
     neuronSizes{i} = results{i}.inputs__post_ + results{i}.outputs__pre_;
@@ -46,12 +50,14 @@ else
     maxSize = max(maxSizes);
 end
 
-% Compute connectivity score for each neuron/region, normalized by maxSize
+%% Compute connectivity score for each neuron/region, normalized by maxSize
 cScoreNeuron = cell(nResults, 1);
 cScoreRegion = zeros(nResults, 1);
 for i = 1:nResults
-    cScoreNeuron{i} = results{i}{:, results{i}.Properties.VariableNames == region(i, 2) + '_post'}/ ...
-        results{i}.inputs__post_ * results{i}{:, results{i}.Properties.VariableNames == region(i, 3) + '_pre'}/ ...
+    regPost = regCol(i, 1) + '_post';
+    regPre = regCol(i, 2) + '_pre';
+    cScoreNeuron{i} = results{i}{:, results{i}.Properties.VariableNames == regPost}/ ...
+        results{i}.inputs__post_ * results{i}{:, results{i}.Properties.VariableNames == regPre}/ ...
         results{i}.outputs__pre_ * neuronSizes{i}/maxSize;
         % Joint probability of a neuron receiving inputs from region 1 and
         % outputing to region 2, normalized by the maximum neuron size in
@@ -64,6 +70,7 @@ cScoreRegion = reshape(cScoreRegion, length(uniqueRegion), length(uniqueRegion))
 
 % Plot heatmap for connectivity matrix
 f1 = figure("Name", "ConnectivityMatrix_" + strjoin(uniqueRegion, '_'));
+f1.Position = [100 100 1000 1000];
 figure(f1)
 h = heatmap(uniqueRegion, uniqueRegion, cScoreRegion);
 h.Title = 'Connectivity Matrix';

@@ -1,0 +1,3 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),bL(R) #post,bL(R) #pre,a'L(L) #post,a'L(L) #pre,#voxels
+424767514,MBON11(y1pedc>a/B)_R,,MBON11,Traced,27642,1646,320,65,1,2,5265462913
+517518166,MBON11(y1pedc>a/B)(ADM05)_L,,MBON11,Traced,1160,1378,222,34,3,2,1964048244

@@ -1,0 +1,5 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),bL(R) #post,bL(R) #pre,BU(L) #post,BU(L) #pre,#voxels
+329566174,OA-VPM3(NO2/NO3)_R,,OA-VPM3,Traced,10075,8632,6,8,,1,6917059458
+1167295853,ER4d(ring)_L,,ER4d,Traced,1847,538,1,,2,2,736880426
+1198330286,ExR2(PPM3-EB-DAN/ring)_R,,ExR2,Traced,2590,1152,2,,73,117,1472264855
+1199712272,ER2_c(ring)_L,,ER2_c,Traced,1574,477,1,,85,2,663224623

@@ -1,0 +1,6 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),b'L(R) #post,b'L(R) #pre,a'L(L) #post,a'L(L) #pre,#voxels
+299082033,LHPV5e1(PDL05)_L,,LHPV5e1,Traced,4201,1313,1,1,22,1,1486830838
+424767514,MBON11(y1pedc>a/B)_R,,MBON11,Traced,27642,1646,35,37,1,2,5265462913
+517514142,PPL104(a'3)_R,,PPL104,Traced,5012,1563,64,,82,36,1948744287
+517518166,MBON11(y1pedc>a/B)(ADM05)_L,,MBON11,Traced,1160,1378,11,26,3,2,1964048244
+642702809,CRE050_R,not yet identified MBON candidates,CRE050,Traced,4620,620,28,1,14,1,2023774583

@@ -1,0 +1,4 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),LAL(L) #post,LAL(L) #pre,a'L(L) #post,a'L(L) #pre,#voxels
+424918786,PPL107(PDL05)_L,,PPL107,Traced,7622,3353,92,3,2,3,2320900064
+703866010,SMP143(ADM08)_L,Tdc2 (OA)-ASM candidates,SMP143,Traced,2240,1690,26,,,1,1902489195
+768677562,,,,Traced,2537,714,203,19,,2,1232037610

@@ -1,0 +1,4 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),EB #post,EB #pre,a'L(R) #post,a'L(R) #pre,#voxels
+424789697,MBON02(B2B'2a)_R,,MBON02,Traced,19554,1155,1,,42,25,4356555624
+699031185,SIFa(PDM34),,SIFa,Traced,1080,777,19,5,2,1,5702733325
+1418618235,SIFa(PDM34),,SIFa,Traced,1592,935,57,34,,1,6190229391

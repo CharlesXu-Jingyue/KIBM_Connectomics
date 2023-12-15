@@ -1,0 +1,4 @@
+id,instance,notes,type,status,inputs (#post),outputs (#pre),a'L(L) #post,a'L(L) #pre,LAL(R) #post,LAL(R) #pre,#voxels
+706948318,MBON31(a'1a)(ADM10)_L,,MBON31,Traced,3298,932,52,,210,242,1535739624
+5812980746,SIP087(PDM22)_L,,SIP087,Traced,7549,3221,3,,638,442,3325948715
+5813062838,CRE022_L,,CRE022,Traced,5859,1060,4,,154,140,2547121426
