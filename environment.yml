@@ -1,0 +1,12 @@
+name: neuprint
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - ipykernel
+  - numpy
+  - bokeh
+  - hvplot
+  - holoviews
+  - neuprint-python
+prefix: /Users/alveus/opt/anaconda3/envs/neuprint
