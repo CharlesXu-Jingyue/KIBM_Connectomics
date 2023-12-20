@@ -8,5 +8,4 @@ dependencies:
   - bokeh
   - hvplot
   - holoviews
-  - neuprint-python
 prefix: /Users/alveus/opt/anaconda3/envs/neuprint
